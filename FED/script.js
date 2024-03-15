@@ -1,4 +1,4 @@
-let piano = document.getElementsByClassName("piano");
+let pianoC = document.getElementsByClassName("piano");
 const base = "./audio/";
 window.onload = () => {
   //24keys
@@ -10,6 +10,6 @@ window.onload = () => {
     div.addEventListener("click", () => {
       new Audio(`${base}key${number}.mp3`).play();
     });
-    piano[0].appendChild(div);
+    pianoC[0].appendChild(div);
   }
 };
