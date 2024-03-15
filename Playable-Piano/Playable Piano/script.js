@@ -1,4 +1,4 @@
-let pianoContainer = document.getElementsByClassName("piano-container");
+let pianoContainer = document.getElementsByClassName("piano");
 const base = "./audio/";
 window.onload = () => {
   //24keys
