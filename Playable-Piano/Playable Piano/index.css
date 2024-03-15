@@ -3,7 +3,7 @@ body {
   margin: 0;
   background-color: #2887e3;
 }
-.piano-container {
+.piano {
   display: flex;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -70,17 +70,17 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-  .piano-container {
+  .piano {
     font-size: 0.7em;
   }
 }
 @media screen and (max-width: 700px) {
-  .piano-container {
+  .piano {
     font-size: 0.5em;
   }
 }
 @media screen and (max-width: 500px) {
-  .piano-container {
+  .piano {
     font-size: 0.3em;
   }
 }
