@@ -1,94 +1,56 @@
-html{
+html {
   box-sizing: border-box;
+  background-color: #ae9b46;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  background-color: #ae9b46;
-}
-.piano-container {
-  display: flex;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  padding: 4em 1em 1em 1em;
-  border-radius: 0.62em;
-  background-color: #24272e;
-  box-shadow: 0 2em 4em rgba(7, 0, 53, 0.25);
-}
-.white-key {
-  width: 4.37em;
-  height: 17.5em;
-  background-color: #ffffff;
-  border-radius: 0 0 0.3em 0.3em;
-  border: 2px solid #24272e;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-.white-key:hover {
-  background-color: #ebebeb;
-}
-.black-key {
-  width: 2.5em;
-  height: 10em;
-  border-radius: 0 0 0.3em 0.3em;
-  box-sizing: border-box;
-  position: absolute;
-  background-color: #070a0f;
-  cursor: pointer;
-}
-.black-key:hover {
-  background-color: #24272e;
-}
-.black-key:nth-child(1) {
-  left: 4.2em;
-}
-.black-key:nth-child(2) {
-  left: 8.37em;
-}
-.black-key:nth-child(3) {
-  left: 17.12em;
-}
-.black-key:nth-child(4) {
-  left: 21.5em;
-}
-.black-key:nth-child(5) {
-  left: 25.87em;
-}
-.black-key:nth-child(6) {
-  left: 34.62em;
-}
-.black-key:nth-child(7) {
-  left: 39em;
-}
-.black-key:nth-child(8) {
-  left: 47.75em;
-}
-.black-key:nth-child(9) {
-  left: 52.12em;
-}
-.black-key:nth-child(10) {
-  left: 56.5em;
+.piano {
+  background-color: #00471b;
+  width: 992px;
+  height: 290px;
+  margin: 80px auto;
+  padding: 90px 20px 0 20px;
+  position: relative;
+  border-radius: 10px;
 }
 
-@media screen and (max-width: 1000px) {
-  .piano-container {
-    font-size: 0.7em;
-  }
+.keys {
+  background-color: #040404;
+  width: 949px;
+  height: 180px;
+  padding-left: 2px;
+  overflow: hidden;
 }
-@media screen and (max-width: 700px) {
-  .piano-container {
-    font-size: 0.5em;
-  }
+
+.key {
+  background-color: #ffffff;
+  position: relative;
+  width: 41px;
+  height: 175px;
+  margin: 2px;
+  float: left;
+  border-radius: 0 0 3px 3px;
 }
-@media screen and (max-width: 500px) {
-  .piano-container {
-    font-size: 0.3em;
+
+.key.black--key::after {
+  background-color: #1d1e22;
+  content: "";
+  position: absolute;
+  left: -18px;
+  width: 32px;
+  height: 100px;
+  border-radius: 0 0 3px 3px;
+}
+
+@media (max-width: 768px) {
+  #piano {
+    width: 358px;
+  }
+
+  .keys {
+    width: 318px;
   }
 }
