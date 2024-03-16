@@ -52,10 +52,6 @@ body{
   border-radius: 0 0 3px 3px;
 }
 
-.key.black--key:hover{
-  background-color: #24272e;
-}
-
 @media (max-width: 768px) {
   .piano {
     width: 358px;
