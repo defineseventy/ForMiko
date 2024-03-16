@@ -1,11 +1,19 @@
+html{
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   padding: 0;
   margin: 0;
-  background-color: #2887e3;
+  background-color: #ae9b46;
 }
 .piano-container {
   display: flex;
-  position: relative;
+  position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
