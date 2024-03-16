@@ -1,10 +1,13 @@
 html {
   box-sizing: border-box;
-  background-color: #ae9b46;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+body{
+  background-color: #ae9b46;
 }
 
 .piano {
