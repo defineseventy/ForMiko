@@ -28,7 +28,7 @@ body{
   overflow: hidden;
 }
 
-.key.white--key {
+.key {
   background-color: #ffffff;
   position: relative;
   width: 41px;
@@ -38,7 +38,7 @@ body{
   border-radius: 0 0 3px 3px;
 }
 
-.key.white--key:hover{
+.key:hover{
   background-color: #ebebeb;
 }
 
