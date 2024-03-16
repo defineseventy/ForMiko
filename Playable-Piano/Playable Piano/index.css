@@ -28,7 +28,7 @@ body{
   overflow: hidden;
 }
 
-.key {
+.key.white--key {
   background-color: #ffffff;
   position: relative;
   width: 41px;
@@ -36,6 +36,10 @@ body{
   margin: 2px;
   float: left;
   border-radius: 0 0 3px 3px;
+}
+
+.key.white--key:hover{
+  background-color: #ebebeb;
 }
 
 .key.black--key::after {
@@ -46,6 +50,10 @@ body{
   width: 32px;
   height: 100px;
   border-radius: 0 0 3px 3px;
+}
+
+.key.black--key:hover{
+  background-color: #24272e;
 }
 
 @media (max-width: 768px) {
